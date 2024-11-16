@@ -4,31 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios de Mudanzas</title>
+    <title>Servicios de Mudanzas El Viajero</title>
     <link rel="stylesheet" href="{% static 'mudanzas.css' %}">
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
-        <h1>Servicios de Mudanzas</h1>
-        <p>¡Rápido, seguro y confiable!</p>
-    </header>
-    <main>
-        <section>
-            <h2>Nuestros Servicios</h2>
+        <div class="logo">
+            <img src="{% static 'mudanzas/images/logo.png' %}" alt="Logo Mudanzas El Viajero">
+        </div>
+        <nav>
             <ul>
-                <li>Mudanzas residenciales</li>
-                <li>Mudanzas comerciales</li>
-                <li>Transporte de objetos pesados</li>
-                <li>Empaque y desembalaje</li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#porque-elegirnos">¿Por qué elegirnos?</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </section>
-        <section>
-            <h2>¿Por qué elegirnos?</h2>
-            <p>Contamos con un equipo profesional, precios competitivos y atención personalizada para garantizar que tu mudanza sea una experiencia libre de estrés.</p>
-        </section>
-        <footer>
-            <p>Contáctanos: <a href="tel:+123456789">+1 234 567 89</a></p>
-        </footer>
-    </main>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="hero">
+        <h1>Mudanzas El Viajero</h1>
+        <p>¡Rápido, seguro y confiable! Facilitamos tu mudanza para que sea sin estrés.</p>
+        <a href="#contacto" class="cta-button">Contáctanos</a>
+    </section>
+
+    <!-- Sección de servicios -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-grid">
+            <article>
+                <h3>Mudanzas residenciales</h3>
+                <p>Transportamos tus muebles y pertenencias con el mayor cuidado y profesionalismo.</p>
+            </article>
+            <article>
+                <h3>Mudanzas comerciales</h3>
+                <p>Especialistas en trasladar oficinas, tiendas y locales comerciales de forma eficiente.</p>
+            </article>
+            <article>
+                <h3>Transporte de objetos pesados</h3>
+                <p>Movemos pianos, electrodomésticos, y cualquier objeto voluminoso con equipos especializados.</p>
+            </article>
+            <article>
+                <h3>Empaque y desembalaje</h3>
+                <p>Te ayudamos a empacar todo de manera segura y a instalarlo en tu nuevo hogar.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sección de por qué elegirnos -->
+    <section id="porque-elegirnos">
+        <h2>¿Por qué elegirnos?</h2>
+        <div class="ventajas">
+            <div>
+                <h3>Profesionalismo</h3>
+                <p>Contamos con un equipo capacitado que cuida cada detalle de tu mudanza.</p>
+            </div>
+            <div>
+                <h3>Seguridad</h3>
+                <p>Tu tranquilidad es nuestra prioridad. Tus pertenencias están en las mejores manos.</p>
+            </div>
+            <div>
+                <h3>Precios Competitivos</h3>
+                <p>Ofrecemos tarifas accesibles sin comprometer la calidad de nuestro servicio.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <blockquote>
+            <p>“El equipo de Mudanzas El Viajero fue increíble. Mi mudanza fue rápida y sin problemas. ¡Muy recomendados!”</p>
+            <cite>– María López</cite>
+        </blockquote>
+        <blockquote>
+            <p>“Excelente servicio, cuidaron mis muebles como si fueran suyos. Definitivamente los volveré a contratar.”</p>
+            <cite>– Juan Pérez</cite>
+        </blockquote>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Mudanzas El Viajero. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="tel:+123456789">+1 234 567 89</a> | <a href="mailto:info@mudanzaselviajero.com">info@mudanzaselviajero.com</a></p>
+    </footer>
 </body>
 </html>
